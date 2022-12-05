@@ -47,4 +47,10 @@ public class ItemService {
     private Item verifyItem(Integer itemId) {
         return itemRepository.findById(itemId).orElseThrow(() -> new ItemNotExistException("Item not found for id: " + itemId));
     }
+
+    public List<String> listAllCategories() {
+        List<Item> items = itemRepository.findAll();
+        List<String> categories = items.stream().map(Item::getCategory).distinct().toList();
+        return categories;
+    }
 }

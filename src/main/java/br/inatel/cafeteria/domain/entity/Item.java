@@ -12,6 +12,7 @@ public class Item {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "itemId")
     private Integer itemId;
+
     @Column(name = "name")
     @NotBlank(message = "Name é um campo obrigatório")
     private String name;

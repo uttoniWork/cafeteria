@@ -57,4 +57,12 @@ public class ItemController {
 
         return ResponseEntity.ok(items);
     }
+
+    @GetMapping("/listAllCategories")
+    public ResponseEntity<List<String>> listAllCategories(){
+
+        final List<String> categories = itemService.listAllCategories();
+
+        return ResponseEntity.ok(categories);
+    }
 }
