@@ -1,4 +1,5 @@
-# Cafeteria
+[![Java CI with Gradle](https://github.com/uttoniWork/cafeteria/actions/workflows/gradle.yml/badge.svg)](https://github.com/uttoniWork/cafeteria/actions/workflows/gradle.yml)
+# Coffee Shop
 
 - [Sobre](#-sobre)
 - [Como executar](#-como-executar)
